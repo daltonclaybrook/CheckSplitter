@@ -1,7 +1,7 @@
 
 import Foundation
 
-struct Check {
+struct Check: Equatable {
 	let restaurant: String
 	let whoPaid: People
 	let items: [PayRecord]
@@ -11,11 +11,6 @@ struct Check {
 		self.whoPaid = whoPaid
 		self.items = items
 	}
-}
-
-struct CheckResult {
-	let check: Check
-	let totals: Totals
 }
 
 extension Check {

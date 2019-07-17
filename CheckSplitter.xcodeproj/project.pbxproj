@@ -19,10 +19,14 @@
 		750B0C2722DEB2A000F02495 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1622DEB26900F02495 /* Totals.swift */; };
 		750B0C2922DEB5B900F02495 /* Check+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2822DEB5B900F02495 /* Check+Factory.swift */; };
 		750B0C2A22DEB5B900F02495 /* Check+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2822DEB5B900F02495 /* Check+Factory.swift */; };
-		750B0C2C22DEBF1100F02495 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* Array+Additions.swift */; };
-		750B0C2D22DEBF1100F02495 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* Array+Additions.swift */; };
+		750B0C2C22DEBF1100F02495 /* CheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* CheckResult.swift */; };
+		750B0C2D22DEBF1100F02495 /* CheckResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* CheckResult.swift */; };
 		750B0C3022DEC53400F02495 /* CheckSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2F22DEC53400F02495 /* CheckSplitter.swift */; };
 		750B0C3122DEC53400F02495 /* CheckSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2F22DEC53400F02495 /* CheckSplitter.swift */; };
+		750B0C3422DEC76800F02495 /* CheckResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C3222DEC76800F02495 /* CheckResultTests.swift */; };
+		750B0C3622DEC83800F02495 /* Check+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C3522DEC83800F02495 /* Check+Additions.swift */; };
+		750B0C3822DECBB800F02495 /* CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C3722DECBB800F02495 /* CheckTests.swift */; };
+		750B0C3A22DECD6700F02495 /* TotalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C3922DECD6700F02495 /* TotalsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,8 +52,12 @@
 		750B0C1E22DEB29900F02495 /* CheckSplitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitterTests.swift; sourceTree = "<group>"; };
 		750B0C2022DEB29900F02495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750B0C2822DEB5B900F02495 /* Check+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Check+Factory.swift"; sourceTree = "<group>"; };
-		750B0C2B22DEBF1100F02495 /* Array+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
+		750B0C2B22DEBF1100F02495 /* CheckResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResult.swift; sourceTree = "<group>"; };
 		750B0C2F22DEC53400F02495 /* CheckSplitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitter.swift; sourceTree = "<group>"; };
+		750B0C3222DEC76800F02495 /* CheckResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResultTests.swift; sourceTree = "<group>"; };
+		750B0C3522DEC83800F02495 /* Check+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Check+Additions.swift"; sourceTree = "<group>"; };
+		750B0C3722DECBB800F02495 /* CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTests.swift; sourceTree = "<group>"; };
+		750B0C3922DECD6700F02495 /* TotalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				750B0C0922DEB20200F02495 /* main.swift */,
-				750B0C2B22DEBF1100F02495 /* Array+Additions.swift */,
+				750B0C2B22DEBF1100F02495 /* CheckResult.swift */,
 				750B0C1022DEB21200F02495 /* People.swift */,
 				750B0C1222DEB22E00F02495 /* PayRecord.swift */,
 				750B0C1422DEB24400F02495 /* Check.swift */,
@@ -106,7 +114,11 @@
 		750B0C1D22DEB29900F02495 /* CheckSplitterTests */ = {
 			isa = PBXGroup;
 			children = (
+				750B0C3722DECBB800F02495 /* CheckTests.swift */,
+				750B0C3522DEC83800F02495 /* Check+Additions.swift */,
 				750B0C1E22DEB29900F02495 /* CheckSplitterTests.swift */,
+				750B0C3222DEC76800F02495 /* CheckResultTests.swift */,
+				750B0C3922DECD6700F02495 /* TotalsTests.swift */,
 				750B0C2022DEB29900F02495 /* Info.plist */,
 			);
 			path = CheckSplitterTests;
@@ -205,7 +217,7 @@
 				750B0C2922DEB5B900F02495 /* Check+Factory.swift in Sources */,
 				750B0C1722DEB26900F02495 /* Totals.swift in Sources */,
 				750B0C3022DEC53400F02495 /* CheckSplitter.swift in Sources */,
-				750B0C2C22DEBF1100F02495 /* Array+Additions.swift in Sources */,
+				750B0C2C22DEBF1100F02495 /* CheckResult.swift in Sources */,
 				750B0C1122DEB21200F02495 /* People.swift in Sources */,
 				750B0C1322DEB22E00F02495 /* PayRecord.swift in Sources */,
 				750B0C0A22DEB20200F02495 /* main.swift in Sources */,
@@ -216,11 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750B0C3822DECBB800F02495 /* CheckTests.swift in Sources */,
 				750B0C2622DEB2A000F02495 /* Check.swift in Sources */,
+				750B0C3A22DECD6700F02495 /* TotalsTests.swift in Sources */,
+				750B0C3422DEC76800F02495 /* CheckResultTests.swift in Sources */,
+				750B0C3622DEC83800F02495 /* Check+Additions.swift in Sources */,
 				750B0C2A22DEB5B900F02495 /* Check+Factory.swift in Sources */,
 				750B0C2722DEB2A000F02495 /* Totals.swift in Sources */,
 				750B0C3122DEC53400F02495 /* CheckSplitter.swift in Sources */,
-				750B0C2D22DEBF1100F02495 /* Array+Additions.swift in Sources */,
+				750B0C2D22DEBF1100F02495 /* CheckResult.swift in Sources */,
 				750B0C2422DEB2A000F02495 /* People.swift in Sources */,
 				750B0C2522DEB2A000F02495 /* PayRecord.swift in Sources */,
 				750B0C1F22DEB29900F02495 /* CheckSplitterTests.swift in Sources */,

@@ -1,6 +1,6 @@
 import Foundation
 
-enum PayRecord {
+enum PayRecord: Equatable {
 	case item(_ description: String, price: Double, whoOrdered: People)
 	case taxTip(price: Double)
 }

@@ -1,5 +1,10 @@
 import Foundation
 
+struct CheckResult: Equatable {
+	let check: Check
+	let totals: Totals
+}
+
 extension Array where Element == CheckResult {
 	var combinedTotals: Totals {
 		reduce(Totals()) { fullResult, checkResult in
