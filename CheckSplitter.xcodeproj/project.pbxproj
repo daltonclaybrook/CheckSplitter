@@ -11,16 +11,18 @@
 		750B0C1122DEB21200F02495 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1022DEB21200F02495 /* People.swift */; };
 		750B0C1322DEB22E00F02495 /* PayRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1222DEB22E00F02495 /* PayRecord.swift */; };
 		750B0C1522DEB24400F02495 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1422DEB24400F02495 /* Check.swift */; };
-		750B0C1722DEB26900F02495 /* Dictionary+Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1622DEB26900F02495 /* Dictionary+Payment.swift */; };
+		750B0C1722DEB26900F02495 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1622DEB26900F02495 /* Totals.swift */; };
 		750B0C1F22DEB29900F02495 /* CheckSplitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1E22DEB29900F02495 /* CheckSplitterTests.swift */; };
 		750B0C2422DEB2A000F02495 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1022DEB21200F02495 /* People.swift */; };
 		750B0C2522DEB2A000F02495 /* PayRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1222DEB22E00F02495 /* PayRecord.swift */; };
 		750B0C2622DEB2A000F02495 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1422DEB24400F02495 /* Check.swift */; };
-		750B0C2722DEB2A000F02495 /* Dictionary+Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1622DEB26900F02495 /* Dictionary+Payment.swift */; };
+		750B0C2722DEB2A000F02495 /* Totals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C1622DEB26900F02495 /* Totals.swift */; };
 		750B0C2922DEB5B900F02495 /* Check+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2822DEB5B900F02495 /* Check+Factory.swift */; };
 		750B0C2A22DEB5B900F02495 /* Check+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2822DEB5B900F02495 /* Check+Factory.swift */; };
 		750B0C2C22DEBF1100F02495 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* Array+Additions.swift */; };
 		750B0C2D22DEBF1100F02495 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2B22DEBF1100F02495 /* Array+Additions.swift */; };
+		750B0C3022DEC53400F02495 /* CheckSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2F22DEC53400F02495 /* CheckSplitter.swift */; };
+		750B0C3122DEC53400F02495 /* CheckSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B0C2F22DEC53400F02495 /* CheckSplitter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,12 +43,13 @@
 		750B0C1022DEB21200F02495 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		750B0C1222DEB22E00F02495 /* PayRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayRecord.swift; sourceTree = "<group>"; };
 		750B0C1422DEB24400F02495 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
-		750B0C1622DEB26900F02495 /* Dictionary+Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Payment.swift"; sourceTree = "<group>"; };
+		750B0C1622DEB26900F02495 /* Totals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Totals.swift; sourceTree = "<group>"; };
 		750B0C1C22DEB29900F02495 /* CheckSplitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckSplitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B0C1E22DEB29900F02495 /* CheckSplitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitterTests.swift; sourceTree = "<group>"; };
 		750B0C2022DEB29900F02495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750B0C2822DEB5B900F02495 /* Check+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Check+Factory.swift"; sourceTree = "<group>"; };
 		750B0C2B22DEBF1100F02495 /* Array+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
+		750B0C2F22DEC53400F02495 /* CheckSplitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplitter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +97,8 @@
 				750B0C1222DEB22E00F02495 /* PayRecord.swift */,
 				750B0C1422DEB24400F02495 /* Check.swift */,
 				750B0C2822DEB5B900F02495 /* Check+Factory.swift */,
-				750B0C1622DEB26900F02495 /* Dictionary+Payment.swift */,
+				750B0C1622DEB26900F02495 /* Totals.swift */,
+				750B0C2F22DEC53400F02495 /* CheckSplitter.swift */,
 			);
 			path = CheckSplitter;
 			sourceTree = "<group>";
@@ -199,7 +203,8 @@
 			files = (
 				750B0C1522DEB24400F02495 /* Check.swift in Sources */,
 				750B0C2922DEB5B900F02495 /* Check+Factory.swift in Sources */,
-				750B0C1722DEB26900F02495 /* Dictionary+Payment.swift in Sources */,
+				750B0C1722DEB26900F02495 /* Totals.swift in Sources */,
+				750B0C3022DEC53400F02495 /* CheckSplitter.swift in Sources */,
 				750B0C2C22DEBF1100F02495 /* Array+Additions.swift in Sources */,
 				750B0C1122DEB21200F02495 /* People.swift in Sources */,
 				750B0C1322DEB22E00F02495 /* PayRecord.swift in Sources */,
@@ -213,7 +218,8 @@
 			files = (
 				750B0C2622DEB2A000F02495 /* Check.swift in Sources */,
 				750B0C2A22DEB5B900F02495 /* Check+Factory.swift in Sources */,
-				750B0C2722DEB2A000F02495 /* Dictionary+Payment.swift in Sources */,
+				750B0C2722DEB2A000F02495 /* Totals.swift in Sources */,
+				750B0C3122DEC53400F02495 /* CheckSplitter.swift in Sources */,
 				750B0C2D22DEBF1100F02495 /* Array+Additions.swift in Sources */,
 				750B0C2422DEB2A000F02495 /* People.swift in Sources */,
 				750B0C2522DEB2A000F02495 /* PayRecord.swift in Sources */,
