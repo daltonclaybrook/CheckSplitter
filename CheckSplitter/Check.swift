@@ -1,8 +1,6 @@
 
 import Foundation
 
-typealias Totals = [People: Double]
-
 struct Check {
 	let restaurant: String
 	let whoPaid: People

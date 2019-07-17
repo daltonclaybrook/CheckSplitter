@@ -1,6 +1,8 @@
 import Foundation
 
-extension Dictionary where Key == People, Value == Double {
+typealias Totals = [People: Double]
+
+extension Totals {
 	mutating func people(_ whoOrdered: People, owe price: Double, to whoPaid: People) {
 		self[whoPaid] = (self[whoPaid] ?? 0) - price
 		self[whoOrdered] = (self[whoOrdered] ?? 0) + price
@@ -15,7 +17,7 @@ extension Dictionary where Key == People, Value == Double {
 	}
 
 	func mergedWith(other: [People: Double]) -> [People: Double] {
-		reduce(into: self) { result, pair in
+		other.reduce(into: self) { result, pair in
 			let previous = result[pair.key] ?? 0
 			result[pair.key] = previous + pair.value
 		}

@@ -1,13 +1,19 @@
 import Foundation
 
 extension Array where Element == CheckResult {
+	var combinedTotals: Totals {
+		reduce(Totals()) { fullResult, checkResult in
+			fullResult.mergedWith(other: checkResult.totals)
+		}
+	}
+
 	var resultDescription: String {
 		let descriptions = map { result -> String in
 			let checkDescription =
 			"""
 			Restaurant: \(result.check.restaurant)
 			Who Paid: \(result.check.whoPaid.rawValue)
-			Total: $\(String(format: "%.2f", result.check.summedTotal))
+			Check Total: $\(String(format: "%.2f", result.check.summedTotal))
 			---
 			"""
 			let balancesString = result.totals.compactMap { pair in
@@ -17,13 +23,22 @@ extension Array where Element == CheckResult {
 		}
 
 		let allChecksString = descriptions.joined(separator: "\n\n\n")
-		let combinedTotals = reduce(Totals()) { fullResult, checkResult in
-			fullResult.mergedWith(other: checkResult.totals)
-		}
 		let totalsString = combinedTotals.map { pair -> String in
-			"People: \(pair.key.rawValue): $\(String(format: "%.2f", pair.value))"
+			"\(pair.key.rawValue): $\(String(format: "%.2f", pair.value))"
 		}.joined(separator: "\n")
 
-		return "\(allChecksString)\n\n\n===Grand Totals===\n\(totalsString)"
+		return """
+		A positive dollar amount below means the person owes money.
+		A negative (-) dollar amount means they are owed money.
+
+		\(allChecksString)
+
+		============
+		Grand Totals
+		============
+
+		\(totalsString)
+
+		"""
 	}
 }
